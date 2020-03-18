@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body {
+    background: #111;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	position: absolute;
+	text-align: center;
+	border-radius: 25px;
+	transform: translateX(-50%) translateY(-50%);
+	background: rgba(0, 0, 0, 0.8)
+}
+
+#bgVideo {
+	position:fixed;
+    min-width:135%;
+    min-height:110%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    transform:translateX(-50%) translateY(-50%);
+    background-size:cover;
+    overflow:hidden;
+	-webkit-filter:blur(15px); /* What is below is optional */
+    -moz-filter:blur(15px); /* this stuff may make the video look of less quality */
+    -o-filter:blur(15px);
+    -ms-filter:blur(15px);
+    filter:blur(15px);
+    background:rgba(7,9,21,.5);
+    filter:brightness(50%); /* End of optional stuff */
+}
+
+#body,video{
+    top:50%;
+    left:50%
+}
+
+#events{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    z-index: 999;
+    display: block;
+    font-size: 12px;
+}
+
+#mid{               
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);    
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+a{
+    text-align: center;
+	font-size: 12px;
+	text-align: center;	
+	color: white;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	font-family: Comfortaa;
+	-webkit-transition: 1s;
+}
+a:hover{
+	color: grey;
+	-webkit-transition: 1s;
+}
+
+p{
+	color: grey;
+	letter-spacing: 1px;
+	font-family: Comfortaa;
+	font-size: 17px;
+}
+
+.log-title {
+    color: #ec8ab0;
+}
+
+.log-body {
+    color: rgb(220,220,220);
+}
+
+.event {
+    position: relative;
+    opacity: 0;
+    top: -10px;
+}
+
+ashake,
+.shake.inline {
+	display:inline-block
+}
+
+.shake {
+	display:inline-block
+}
+.shake {
+	display:block;
+	position:relative;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake:hover,
+.shake:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 4s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+#thefile {
+  position: fixed;
+  top: 10px;
+  left: 200px;
+  z-index: 100;
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
+}
+
+.japanese {
+	font-size: 250%;
+	-webkit-text-stroke-width: 0px;
+   -webkit-text-stroke-color: black;
+  color: white;
+  text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px #553300,0px 0px 10px #553300;
+}
+.japanese2 {
+	-webkit-text-stroke-width: 0px;
+   -webkit-text-stroke-color: black;
+  color: white;
+  text-shadow: 0px 0px 5px white,0px 0px 5px white,0px 0px 5px white,0px 0px 10px #553300,0px 0px 10px #553300;
+}
+.japanese3 {
+	font-size: 200%;
+	-webkit-text-stroke-width: 0px;
+   -webkit-text-stroke-color: black;
+  color: white;
+  text-shadow: 0px 0px 10px white,0px 0px 10px white,0px 0px 10px white,0px 0px 5px #553300,0px 0px 5px #553300;
+}
+
+#title {
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+}
+
+#title h1 {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 53pt;
+	font-weight: normal;
+	color: #eee;
+	height: 120px;
+}
+
+#title h2 {
+	margin-top: -40px;
+	margin-left: 325px;
+	padding: 0;
+	text-align: center;
+	font-size: 9pt;
+	color: #666;
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+}
+
+#title h3 {
+	margin: 0;
+}
+
+#title p {
+	margin: 0;
+	padding: 0;
+}
+
+#title span {
+	color: #E40129;
+	font-family: Raleway,Helvetica Neue,Helvetica,sans-serif;
+}
+
+#buttons {
+	margin-top: 50px;
+}
+
+#buttons a {
+	margin-left: 3px;
+	margin-right: 3px;
+	font-family: Raleway,Helvetica Neue,Helvetica,sans-serif;
+}
+
+.gs-nav-container {
+	width: 1070px;
+	margin: 0 auto;
+	height: 60px;
+	border-bottom: 1px solid #000000;
+	}
+.gs-navbar {
+	position: relative;
+	min-height: 50px;
+	border-radius: 4px;
+	background-image: -webkit-linear-gradient(top, #303030 0%, #151515 100%);
+	background-image: -o-linear-gradient(top, #303030 0%, #151515 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#303030), to(#151515));
+	background-image: linear-gradient(to bottom, #303030 0%, #151515 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff303030', endColorstr='#ff151515', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	background-repeat: repeat-x;
+	}
+.gs-navbar ul {
+	float: left;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	border-left: 1px solid #161616;
+	border-right: 1px solid #333;
+	border-bottom: 1px solid transparent;
+	}
+.gs-navbar li {
+	float: left;
+	margin-bottom: -1px;
+	position: relative;
+	display: block;
+	height: 60px;
+	border-left: 1px solid #333;
+	border-right: 1px solid #161616;
+	}
+.gs-navbar li.active > a,
+.gs-navbar li.active > a:hover,
+.gs-navbar li.active > a:focus {
+	color: #ffffff;
+	cursor: default;
+	}
+.gs-navbar li a {
+	text-decoration: none;
+	color: #888;
+	margin-right: 2px;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	transition: color 0.5s ease;
+	position: relative;
+	display: block;
+	font-family: Impact, sans-serif;
+	font-size: 18pt;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 23px;
+	}
+.gs-navbar li a:hover {
+	color: #fff;
+	text-decoration: none;
+	}
